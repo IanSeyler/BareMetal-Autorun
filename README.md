@@ -13,5 +13,21 @@ In Linux this can be completed with the following command:
 
 	sudo apt install nasm
 
+## Building
+
+	./setup.sh
+ 	./build.sh
+
+## Installing
+
+Copy `bin/autorun.bin` to `BareMetal-OS/sys`
+
+In `BareMetal-OS`:
+
+	cd sys
+	cat pure64.sys kernel.sys autorun.bin > software.sys
+ 	cd ..
+  	./baremetal.sh install
+	./baremetal.sh run
 
 // EOF
