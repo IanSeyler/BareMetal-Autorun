@@ -24,9 +24,7 @@ Copy `bin/autorun.bin` to `BareMetal-OS/sys`
 
 In `BareMetal-OS`:
 
-	cd sys
-	cat pure64.sys kernel.sys autorun.bin > software.sys
- 	cd ..
+	./baremetal.sh build autorun.bin
   	./baremetal.sh install
 	./baremetal.sh run
 
