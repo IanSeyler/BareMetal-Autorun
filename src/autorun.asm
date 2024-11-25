@@ -14,7 +14,7 @@ start:
 	mov rsi, teststring		; Memory address of string
 	mov rcx, 26			; Number of characters to output
 	call [b_output]			; Output to the serial port
-	
+
 	mov rcx, SHUTDOWN		; Shutdown function ID
 	call [b_system]			; Call system API
 	jmp $				; This command should never be executed

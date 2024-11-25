@@ -16,7 +16,7 @@ In Linux this can be completed with the following command:
 ## Building
 
 	./setup.sh
- 	./build.sh
+	./build.sh
 
 ## Installing
 
@@ -25,7 +25,9 @@ Copy `bin/autorun.bin` to `BareMetal-OS/sys`
 In `BareMetal-OS`:
 
 	./baremetal.sh build autorun.bin
-  	./baremetal.sh install
+	./baremetal.sh install
 	./baremetal.sh run
+
+Check `sys/serial.log` to see the output
 
 // EOF
